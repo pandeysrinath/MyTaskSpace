@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.UpdateTaskController">
+   <children>
+      <AnchorPane prefHeight="74.0" prefWidth="400.0" style="-fx-background-color: #62a3ff;">
+         <children>
+            <Label layoutX="128.0" layoutY="15.0" prefHeight="44.0" prefWidth="144.0" text="Task Update" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="updateTaskField" layoutX="80.0" layoutY="124.0" prefHeight="35.0" prefWidth="241.0" promptText="Task" />
+      <TextField fx:id="updateDescriptionField" layoutX="80.0" layoutY="183.0" prefHeight="35.0" prefWidth="241.0" promptText="Description" />
+      <TextField fx:id="updatePriorityField" layoutX="80.0" layoutY="243.0" prefHeight="35.0" prefWidth="241.0" promptText="Priority (upto 3)" />
+      <JFXButton fx:id="updateTaskButton" layoutX="129.0" layoutY="305.0" prefHeight="44.0" prefWidth="144.0" style="-fx-background-color: #1565c0;" text="Update Task" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

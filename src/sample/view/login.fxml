@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #62a3ff;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.LoginController">
+   <children>
+      <AnchorPane layoutY="100.0" mouseTransparent="true" prefHeight="300.0" prefWidth="700.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <JFXButton fx:id="loginButton" layoutX="262.0" layoutY="231.0" prefHeight="47.0" prefWidth="189.0" style="-fx-background-color: #424242;" text="Login" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <TextField fx:id="loginUsername" layoutX="182.0" layoutY="94.0" prefHeight="35.0" prefWidth="350.0" promptText="Username">
+               <effect>
+                  <Reflection />
+               </effect>
+            </TextField>
+            <PasswordField fx:id="loginPassword" layoutX="181.0" layoutY="164.0" prefHeight="35.0" prefWidth="350.0" promptText="Password">
+               <effect>
+                  <Reflection />
+               </effect>
+            </PasswordField>
+            <AnchorPane prefHeight="35.0" prefWidth="700.0" style="-fx-background-color: #1565c0#1565c0;">
+               <children>
+                  <Label alignment="CENTER" layoutX="297.0" layoutY="5.0" prefHeight="27.0" prefWidth="106.0" text="Login" textFill="WHITE">.
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" layoutX="225.0" layoutY="29.0" prefHeight="47.0" prefWidth="250.0" text="MyTask Space" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="loginSingnupButton" layoutX="580.0" layoutY="25.0" prefHeight="27.0" prefWidth="106.0" style="-fx-background-color: #1675d1;" text="Sign Up" textFill="WHITE" />
+   </children>
+</AnchorPane>

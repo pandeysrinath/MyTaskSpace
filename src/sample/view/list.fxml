@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.ListController">
+   <children>
+      <AnchorPane prefHeight="97.0" prefWidth="701.0" style="-fx-background-color: #62a3ff#62a3ff;">
+         <children>
+            <Label alignment="CENTER" layoutX="289.0" layoutY="27.0" prefHeight="44.0" prefWidth="123.0" text="MyTask's" textFill="WHITE">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="listRefreshButton" fitHeight="35.0" fitWidth="41.0" layoutX="658.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icon_refresh.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="601.0" layoutY="60.0" prefHeight="23.0" prefWidth="57.0" text="Refresh" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <JFXListView fx:id="listTask" layoutX="295.0" layoutY="103.0" prefHeight="290.0" prefWidth="398.0" style="-fx-background-color: #ffffff;">
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXListView>
+      <AnchorPane layoutY="97.0" prefHeight="303.0" prefWidth="294.0">
+         <children>
+            <TextField fx:id="listDescriptionField" layoutX="16.0" layoutY="68.0" prefHeight="35.0" prefWidth="269.0" promptText="Description" />
+            <TextField fx:id="listTaskField" layoutX="14.0" layoutY="14.0" prefHeight="35.0" prefWidth="269.0" promptText="Task" />
+            <TextField fx:id="listPriorityField" layoutX="16.0" layoutY="123.0" prefHeight="35.0" prefWidth="269.0" promptText="Priority upto 3" />
+            <JFXButton fx:id="listSaveTaskButton" layoutX="79.0" layoutY="174.0" prefHeight="45.0" prefWidth="139.0" style="-fx-background-color: #1675d1;" text="Save Task" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXComboBox fx:id="searchByPriorityComboBox" layoutX="16.0" layoutY="254.0" onAction="#getSelectedPriority" prefHeight="35.0" prefWidth="269.0" promptText="Search by Priority..." viewOrder="1.0" />
+            <Line endX="96.0" layoutX="187.0" layoutY="236.0" startX="-177.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

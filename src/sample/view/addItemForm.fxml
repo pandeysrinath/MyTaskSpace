@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.AddItemFormController">
+   <children>
+      <TextField fx:id="descriptionField" layoutX="210.0" layoutY="204.0" prefHeight="35.0" prefWidth="280.0" promptText="Description" />
+      <TextField fx:id="taskField" layoutX="210.0" layoutY="133.0" prefHeight="35.0" prefWidth="280.0" promptText="Task" />
+      <TextField fx:id="priorityField" layoutX="212.0" layoutY="270.0" prefHeight="35.0" prefWidth="280.0" promptText="Priority upto 3" />
+      <JFXButton fx:id="saveTaskButton" layoutX="281.0" layoutY="334.0" prefHeight="45.0" prefWidth="139.0" style="-fx-background-color: #1675d1;" text="Save Task" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <AnchorPane prefHeight="100.0" prefWidth="701.0" style="-fx-background-color: #424242 #424242;">
+         <children>
+            <Label alignment="CENTER" layoutX="258.0" layoutY="28.0" prefHeight="44.0" prefWidth="185.0" text="MyTask Space" textFill="WHITE">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <Label fx:id="successLabel" layoutX="502.0" layoutY="78.0" prefHeight="19.0" prefWidth="185.0" text="Task added successfully!" textFill="WHITE" visible="false">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="todosButton" layoutX="572.0" layoutY="344.0" prefHeight="35.0" prefWidth="115.0" style="-fx-background-color: #2475d1;" text="My Tasks (3)" textFill="WHITE" visible="false" />
+   </children>
+</AnchorPane>

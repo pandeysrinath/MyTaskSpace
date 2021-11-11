@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.SingnupController">
+   <children>
+      <AnchorPane prefHeight="76.0" prefWidth="700.0" style="-fx-background-color: #62a3ff#62a3ff;">
+         <children>
+            <Label layoutX="246.0" layoutY="16.0" prefHeight="44.0" prefWidth="208.0" text="MyTask Space" textFill="WHITE">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="76.0" prefHeight="44.0" prefWidth="700.0" style="-fx-background-color: #1565c0#1565c0;">
+         <children>
+            <Label alignment="CENTER" layoutX="288.0" layoutY="6.0" prefHeight="32.0" prefWidth="124.0" text="Sign Up" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="signUpFirstName" layoutX="39.0" layoutY="150.0" prefHeight="25.0" prefWidth="290.0" promptText="First Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="signUpLastName" layoutX="369.0" layoutY="150.0" prefHeight="25.0" prefWidth="290.0" promptText="Last Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="signUpUsername" layoutX="39.0" layoutY="200.0" prefHeight="25.0" prefWidth="290.0" promptText="Username">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <JFXCheckBox fx:id="signUpCheckboxFemale" layoutX="369.0" layoutY="254.0" text="Female">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXCheckBox>
+      <JFXCheckBox fx:id="signUpCheckboxMale" layoutX="258.0" layoutY="254.0" text="Male">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXCheckBox>
+      <PasswordField fx:id="signUpPassword" layoutX="205.0" layoutY="292.0" prefHeight="25.0" prefWidth="290.0" promptText="Password">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </PasswordField>
+      <TextField fx:id="signUpLocation" layoutX="369.0" layoutY="200.0" prefHeight="25.0" prefWidth="290.0" promptText="Location">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <JFXButton fx:id="signUpButton" layoutX="250.0" layoutY="342.0" prefHeight="44.0" prefWidth="200.0" style="-fx-background-color: #424242;" text="Sign Up" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
